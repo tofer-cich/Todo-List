@@ -1,7 +1,8 @@
-class Project {
+export class Project {
 
-    constructor(title) {
+    constructor(title, dueDate) {
         this.title = title;
+        this.dueDate = dueDate;
         this.todos = [];
     }
 
@@ -16,12 +17,13 @@ class Project {
     }
 }
 
-class Todo {
+export class Todo {
 
     constructor(title, dueDate, description, priority) {
         this.title = title;
         this.dueDate = dueDate;
         this.description = description;
         this.priority = priority;
+        this.complete = 0;
     }
 }
