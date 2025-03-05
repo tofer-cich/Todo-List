@@ -17,6 +17,15 @@ export function createProjectCard() {
     card.appendChild(cardTitle);
     card.appendChild(cardDueDate);
 
+    const openButton = document.createElement("button");
+    openButton.textContent = "Open";
+
+    const deleteButton = document.createElement("button");
+    deleteButton.textContent = "Delete";
+
+    card.appendChild(openButton);
+    card.appendChild(deleteButton);
+
     projWindow.appendChild(card);
 
     return proj;
