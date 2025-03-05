@@ -26,6 +26,10 @@ export function createProjectCard() {
     card.appendChild(openButton);
     card.appendChild(deleteButton);
 
+    deleteButton.addEventListener('click', function() {
+        projWindow.removeChild(card);
+    });
+
     projWindow.appendChild(card);
 
     return proj;
