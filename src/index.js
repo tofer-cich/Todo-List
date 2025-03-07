@@ -10,3 +10,5 @@ const createTodoButton = document.querySelector("#todo-window > button");
 createTodoButton.addEventListener('click', function() {
     createTodoCard();
 });
+
+const currentProj = document.querySelector("#todo-window")

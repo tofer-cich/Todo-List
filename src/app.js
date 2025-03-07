@@ -10,6 +10,10 @@ export class Project {
         this.todos.push(todo);
     }
 
+    getTodos() {
+        return this.todos;
+    }
+
     removeTodo(todo) {
         const index = this.todos.findIndex((element) => element.title === todo.title);
 
@@ -25,5 +29,20 @@ export class Todo {
         this.description = description;
         this.priority = priority;
         this.complete = 0;
+    }
+
+    getTitle() {
+        return this.title;
+    }
+}
+
+export class User {
+
+    constructor() {
+        this.projects = []
+    }
+
+    addProject(proj) {
+        this.projects.push(proj);
     }
 }
